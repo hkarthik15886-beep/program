@@ -1,18 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<title>School Announcement</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+    }
+
+    /* Heading */
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Notice box */
+    .notice-box {
+        width: 70%;
+        margin: 0 auto;
+        background-color: #eef6ff;
+        padding: 30px; /* helps vertically center content */
+        position: relative; /* needed for absolute positioning inside */
+        overflow: auto; /* makes content scrollable if it overflows */
+        max-height: 250px;
+        border-radius: 8px;
+    }
+
+    /* Floating image */
+    .notice-box img {
+        float: left;
+        width: 120px;
+        height: 120px;
+        margin-right: 20px;
+    }
+
+    /* Decorative badge */
+    .badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #ff5252;
+        color: white;
+        padding: 5px 10px;
+        font-size: 12px;
+        border-radius: 12px;
+    }
+
+    /* Clear float */
+    .clear {
+        clear: both;
+    }
+</style>
 </head>
 <body>
-    <form>
-  <input type="radio" name="tech" value="developer" checked> Developer
-  <input type="radio" name="tech" value="engi" checked>Engineering   
-  <input type="radio" name="tech" value="deg">Degree<br><br>
-   <input type="checkbox" name="sport1" value="ckt">Cricket
-   <input type="checkbox" name="sport2" value="fbl" checked>Football<br><br> 
-   <input type="number" name="num" min="1" max="10"><br><br>
-</form>
+
+<h1>Important Notice</h1>
+
+<div class="notice-box">
+    <div class="badge">New</div>
+
+    <img src="https://via.placeholder.com/120" alt="Notice Image">
+
+    <p>
+        Please be informed that the school will be conducting a safety drill this Friday.
+        All students are required to participate and follow the instructions given by teachers.
+        Parents are advised not to be alarmed if they hear about the drill from students.
+    </p>
+
+    <p>
+        Thank you for your cooperation in helping us maintain a safe learning environment
+        for everyone at our school.
+    </p>
+
+    <div class="clear"></div>
+</div>
+
 </body>
 </html>
